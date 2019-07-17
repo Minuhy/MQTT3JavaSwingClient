@@ -1,0 +1,2 @@
+# MQTT3JavaSwingClient
+这是一个用Java写的有会话模式的MQTT客户端，用到了JavaSwing、SQLite、Paho、Beautyeye等技术。界面简洁清新，有MQTT的基本功能，有会话模式，可以在同一主题下会话，可以设置账号、密码、ID、遗嘱等登录初始信息。This is a conversational MQTT client written in Java that USES JavaSwing, SQLite, Paho, Beautyeye, and other technologies.The interface is simple and fresh, with the basic functions of MQTT and the session mode, which allows you to have a conversation under the same theme, and you can set the initial login information such as account number, password, ID and will.

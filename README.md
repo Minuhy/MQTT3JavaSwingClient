@@ -17,11 +17,17 @@ Swing的控件命名都还算满足老师说的规范，像标签是用jlb开头
 初学Java，只是跟着老师的思路来，不懂什么架构，这里简单说下我的结构。分为视图、监听、服务和数据这四个部分，其中，服务有服务管理器。视图驱动，最终回到视图，监听调用服务管理器，由服务管理器统一管理其他服务和数据。服务管理器，和两个视图操作类应该是要单例化的，但时间不够就不改了。自己写的代码全在Client里。
 
 ## 界面截图
-![未连接](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg ''未连接'')
-![已连接](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg ''已连接'')
-![会话](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg ''主题会话'')
-![断开](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg ''断开连接'')
-![退出](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg ''退出'')
+### 未连接
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg)
+### 已连接
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg)
+### 主题会话
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg)
+### 断开连接
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg)
+### 退出
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg)
+
 
 
 # MQTT3JavaSwingClient
@@ -42,8 +48,13 @@ Project architecture is relevant
 I just followed the teacher's train of thought when I started to learn Java. I don't understand any structure. Here is my structure.It is divided into four parts: view, monitor, service and data. Among them, service has service manager.View driven, and eventually back to the view, listening to the invoking service manager, which uniformly manages other services and data.The service manager, and the two view action classes should be singletons, but there isn't enough time to change them.All the code I wrote is in the Client.
 
 ## Screen shots
-![no connet](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg ''no connet'')
-![conneted](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg ''conneted'')
-![Session model](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg ''Topic Session model'')
-![disconnect](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg ''disconnect'')
-![exit](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg ''exit'')
+### no connet
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg)
+### conneted
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg)
+### Topic Session model
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg)
+### disconnect
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg)
+### exit
+![](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg)

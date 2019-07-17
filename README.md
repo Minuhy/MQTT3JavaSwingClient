@@ -1,2 +1,17 @@
+# MQTT3¿Í»§¶Ë - JavaÍ¼ÐÎ»¯½çÃæ
+ÕâÊÇÒ»¸öÓÃJavaÐ´µÄÓÐ»á»°Ä£Ê½µÄMQTT¿Í»§¶Ë£¬ÓÃµ½ÁËJavaSwing¡¢SQLite¡¢Paho¡¢BeautyeyeµÈ¼¼Êõ¡£½çÃæ¼ò½àÇåÐÂ£¬ÓÐMQTTµÄ»ù±¾¹¦ÄÜ£¬ÓÐ»á»°Ä£Ê½£¬¿ÉÒÔÔÚÍ¬Ò»Ö÷ÌâÏÂ»á»°£¬¿ÉÒÔÉèÖÃÕËºÅ¡¢ÃÜÂë¡¢ID¡¢ÒÅÖöµÈµÇÂ¼³õÊ¼ÐÅÏ¢¡£
+##ÆðÒò
+ÊÇÏë²Î¼ÓÈ«¹ú´óÑ§Éúµç×ÓÉè¼Æ´óÈü£¬¶ÓÓÑ±§Ô¹ÓÃÀ¶ÑÀµ÷ÊÔÃ¿´Î¶¼ÒªÁ¬½ÓÌ«Âé·³ÁË£¬ËùÒÔÏëÓÃWIFI£¬ÓÚÊÇÏëµ½ÁËMQTTÐ­Òé£¬ÓÉÓÚMQTT¿Í»§¶Ë»¹Ã»ÓÐÎÒÂúÒâµÄ£¨½Ó´¥ÁËÁ½¸ö£¬MQTT.fx¡¢Í¨ÐÅÃ¨£¬MQTT.fxÍ¦ºÃµÄ£¬µ«ÊÇ²»ÔõÃ´¶®Ó¢ÎÄ£¬¶øÇÒµ¥Æ¬»úÓÉÓÚÄÚ´æÏÞÖÆ£¬Ò»°ãÖ»¶¨ÒåÒ»¸öÖ÷Ìâ£¬¶¼Ã»ÓÐ»á»°Ä£Ê½£¬·¢Ö÷ÌâÌ«Âé·³ÁË£©£¬ÓÚÊÇ¿ªÊ¼¶¯ÊÖ£¬»¨¼¸Ìì×öÁËÒ»¸öÕâ¸ö¡£
+##MQTTÏà¹Ø
+MQTTÊÇÓÃµÄpahoµÄ°ü£¬Ö±½Óµ½¹ÙÍøÏÂµÄ£¬Ö§³ÖMQTT3.1.1£¬MQTTµÄ¹Ø¼ü²¿·Ö£¨MqttClientÀà¡¢MqttClientCallbackÀàµÈ£©Ìí¼ÓÁËÖÐÎÄ×¢ÊÍ£¬¿ÉÒÔÖÐÓ¢ÎÄ¶Ô±È£¬Ã»ÓÐÐÞ¸Ä¹Ù·½µÄ´úÂë¡£MQTT±È½ÏÐ¡¾Í²»²Ã¼ôÁË¡£Õâ¸öÓÐ5M¶à£¨87%£©¶¼ÊÇSQLiteµÄ´óÐ¡(>_<)¡£
+##SQLiteÏà¹Ø
+SQLiteµÄJDBCÊÇ3.27.2.1°æ±¾£¬¹ÙÍø´ò²»¿ªÊÇÔÚ[Bitbucket](https://bitbucket.org/xerial/sqlite-jdbc/downloads/)ÏÂÔØµÄ¡£ÓÃJavaBeans×öµÄ£¨Ð£ÆóºÏ×÷Ö»Ñ§ÁËÕâ¸ö£¬ÌýËµ»¹ÓÐ¸üÀ÷º¦µÄ£©£¬Êý¾Ý¿âÏà¹ØÈ«ÔÚtop.luckysmile.mqtt.client.dataÕâ¸ö°üÀï£¬²ÉÓÃ¾²Ì¬¼ÓÔØ·½Ê½¼ÓÔØÇý¶¯£¬³õ´ÎÑ§Java×¢ÊÍ±È½ÏÏêÏ¸¡£
+##SwingÏà¹Ø
+SwingµÄ¿Ø¼þÃüÃû¶¼»¹ËãÂú×ãÀÏÊ¦ËµµÄ¹æ·¶£¬Ïñ±êÇ©ÊÇÓÃjlb¿ªÍ·£¬Ãû×ÖÊÇÓÃÓ¢ÎÄµÄ£¬ÓÐÒâÒåµÄ¡£ÓÃÁËJackJiang2011µÄ[beautyeye](https://github.com/JackJiang2011/beautyeye)Æ¤·ô°ü£¬Í¦ºÃ¿´µÄ¡£SwingµÄ½á¹¹Ó¦¸ÃÊÇ±È½ÏÇåÎúÃ÷ÁËµÄ£¬Ö÷½çÃæÒ»¸öJpn£¬»á»°£¬µÇÂ¼£¬¶©ÔÄ£¬·¢²¼¸÷Ò»¸öJpn£¬ËùÓÐ¿Ø¼þ·ÅÔÚºó4¸öJpnÉÏ£¬»á»°Ñ¡Ïî¿¨µ¥¶ÀÒ»¸öÀà£¬Ò»¸öÖ÷jpn£¬½ÓÊÕºÍ·¢ËÍ¸÷Ò»¸öjpnÔÚÖ÷jpnÉÏ¡£×¢ÊÍ±È½ÏÏêÏ¸¡£
+##ÏîÄ¿¼Ü¹¹Ïà¹Ø
+³õÑ§Java£¬Ö»ÊÇ¸ú×ÅÀÏÊ¦µÄË¼Â·À´£¬²»¶®Ê²Ã´¼Ü¹¹£¬ÕâÀï¼òµ¥ËµÏÂÎÒµÄ½á¹¹¡£·ÖÎªÊÓÍ¼¡¢¼àÌý¡¢·þÎñºÍÊý¾ÝÕâËÄ¸ö²¿·Ö£¬ÆäÖÐ£¬·þÎñÓÐ·þÎñ¹ÜÀíÆ÷¡£ÊÓÍ¼Çý¶¯£¬×îÖÕ»Øµ½ÊÓÍ¼£¬¼àÌýµ÷ÓÃ·þÎñ¹ÜÀíÆ÷£¬ÓÉ·þÎñ¹ÜÀíÆ÷Í³Ò»¹ÜÀíÆäËû·þÎñºÍÊý¾Ý¡£·þÎñ¹ÜÀíÆ÷£¬ºÍÁ½¸öÊÓÍ¼²Ù×÷ÀàÓ¦¸ÃÊÇÒªµ¥Àý»¯µÄ£¬µ«Ê±¼ä²»¹»¾Í²»¸ÄÁË¡£×Ô¼ºÐ´µÄ´úÂëÈ«ÔÚClientÀï¡£
+##½çÃæ½ØÍ¼
+
+
 # MQTT3JavaSwingClient
-è¿™æ˜¯ä¸€ä¸ªç”¨Javaå†™çš„æœ‰ä¼šè¯æ¨¡å¼çš„MQTTå®¢æˆ·ç«¯ï¼Œç”¨åˆ°äº†JavaSwingã€SQLiteã€Pahoã€Beautyeyeç­‰æŠ€æœ¯ã€‚ç•Œé¢ç®€æ´æ¸…æ–°ï¼Œæœ‰MQTTçš„åŸºæœ¬åŠŸèƒ½ï¼Œæœ‰ä¼šè¯æ¨¡å¼ï¼Œå¯ä»¥åœ¨åŒä¸€ä¸»é¢˜ä¸‹ä¼šè¯ï¼Œå¯ä»¥è®¾ç½®è´¦å·ã€å¯†ç ã€IDã€é—å˜±ç­‰ç™»å½•åˆå§‹ä¿¡æ¯ã€‚This is a conversational MQTT client written in Java that USES JavaSwing, SQLite, Paho, Beautyeye, and other technologies.The interface is simple and fresh, with the basic functions of MQTT and the session mode, which allows you to have a conversation under the same theme, and you can set the initial login information such as account number, password, ID and will.
+This is a conversational MQTT client written in Java that USES JavaSwing, SQLite, Paho, Beautyeye, and other technologies.The interface is simple and fresh, with the basic functions of MQTT and the session mode, which allows you to have a conversation under the same theme, and you can set the initial login information such as account number, password, ID and will.

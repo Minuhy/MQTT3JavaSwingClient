@@ -1,17 +1,49 @@
-# MQTT3¿Í»§¶Ë - JavaÍ¼ÐÎ»¯½çÃæ
-ÕâÊÇÒ»¸öÓÃJavaÐ´µÄÓÐ»á»°Ä£Ê½µÄMQTT¿Í»§¶Ë£¬ÓÃµ½ÁËJavaSwing¡¢SQLite¡¢Paho¡¢BeautyeyeµÈ¼¼Êõ¡£½çÃæ¼ò½àÇåÐÂ£¬ÓÐMQTTµÄ»ù±¾¹¦ÄÜ£¬ÓÐ»á»°Ä£Ê½£¬¿ÉÒÔÔÚÍ¬Ò»Ö÷ÌâÏÂ»á»°£¬¿ÉÒÔÉèÖÃÕËºÅ¡¢ÃÜÂë¡¢ID¡¢ÒÅÖöµÈµÇÂ¼³õÊ¼ÐÅÏ¢¡£
-##ÆðÒò
-ÊÇÏë²Î¼ÓÈ«¹ú´óÑ§Éúµç×ÓÉè¼Æ´óÈü£¬¶ÓÓÑ±§Ô¹ÓÃÀ¶ÑÀµ÷ÊÔÃ¿´Î¶¼ÒªÁ¬½ÓÌ«Âé·³ÁË£¬ËùÒÔÏëÓÃWIFI£¬ÓÚÊÇÏëµ½ÁËMQTTÐ­Òé£¬ÓÉÓÚMQTT¿Í»§¶Ë»¹Ã»ÓÐÎÒÂúÒâµÄ£¨½Ó´¥ÁËÁ½¸ö£¬MQTT.fx¡¢Í¨ÐÅÃ¨£¬MQTT.fxÍ¦ºÃµÄ£¬µ«ÊÇ²»ÔõÃ´¶®Ó¢ÎÄ£¬¶øÇÒµ¥Æ¬»úÓÉÓÚÄÚ´æÏÞÖÆ£¬Ò»°ãÖ»¶¨ÒåÒ»¸öÖ÷Ìâ£¬¶¼Ã»ÓÐ»á»°Ä£Ê½£¬·¢Ö÷ÌâÌ«Âé·³ÁË£©£¬ÓÚÊÇ¿ªÊ¼¶¯ÊÖ£¬»¨¼¸Ìì×öÁËÒ»¸öÕâ¸ö¡£
-##MQTTÏà¹Ø
-MQTTÊÇÓÃµÄpahoµÄ°ü£¬Ö±½Óµ½¹ÙÍøÏÂµÄ£¬Ö§³ÖMQTT3.1.1£¬MQTTµÄ¹Ø¼ü²¿·Ö£¨MqttClientÀà¡¢MqttClientCallbackÀàµÈ£©Ìí¼ÓÁËÖÐÎÄ×¢ÊÍ£¬¿ÉÒÔÖÐÓ¢ÎÄ¶Ô±È£¬Ã»ÓÐÐÞ¸Ä¹Ù·½µÄ´úÂë¡£MQTT±È½ÏÐ¡¾Í²»²Ã¼ôÁË¡£Õâ¸öÓÐ5M¶à£¨87%£©¶¼ÊÇSQLiteµÄ´óÐ¡(>_<)¡£
-##SQLiteÏà¹Ø
-SQLiteµÄJDBCÊÇ3.27.2.1°æ±¾£¬¹ÙÍø´ò²»¿ªÊÇÔÚ[Bitbucket](https://bitbucket.org/xerial/sqlite-jdbc/downloads/)ÏÂÔØµÄ¡£ÓÃJavaBeans×öµÄ£¨Ð£ÆóºÏ×÷Ö»Ñ§ÁËÕâ¸ö£¬ÌýËµ»¹ÓÐ¸üÀ÷º¦µÄ£©£¬Êý¾Ý¿âÏà¹ØÈ«ÔÚtop.luckysmile.mqtt.client.dataÕâ¸ö°üÀï£¬²ÉÓÃ¾²Ì¬¼ÓÔØ·½Ê½¼ÓÔØÇý¶¯£¬³õ´ÎÑ§Java×¢ÊÍ±È½ÏÏêÏ¸¡£
-##SwingÏà¹Ø
-SwingµÄ¿Ø¼þÃüÃû¶¼»¹ËãÂú×ãÀÏÊ¦ËµµÄ¹æ·¶£¬Ïñ±êÇ©ÊÇÓÃjlb¿ªÍ·£¬Ãû×ÖÊÇÓÃÓ¢ÎÄµÄ£¬ÓÐÒâÒåµÄ¡£ÓÃÁËJackJiang2011µÄ[beautyeye](https://github.com/JackJiang2011/beautyeye)Æ¤·ô°ü£¬Í¦ºÃ¿´µÄ¡£SwingµÄ½á¹¹Ó¦¸ÃÊÇ±È½ÏÇåÎúÃ÷ÁËµÄ£¬Ö÷½çÃæÒ»¸öJpn£¬»á»°£¬µÇÂ¼£¬¶©ÔÄ£¬·¢²¼¸÷Ò»¸öJpn£¬ËùÓÐ¿Ø¼þ·ÅÔÚºó4¸öJpnÉÏ£¬»á»°Ñ¡Ïî¿¨µ¥¶ÀÒ»¸öÀà£¬Ò»¸öÖ÷jpn£¬½ÓÊÕºÍ·¢ËÍ¸÷Ò»¸öjpnÔÚÖ÷jpnÉÏ¡£×¢ÊÍ±È½ÏÏêÏ¸¡£
-##ÏîÄ¿¼Ü¹¹Ïà¹Ø
-³õÑ§Java£¬Ö»ÊÇ¸ú×ÅÀÏÊ¦µÄË¼Â·À´£¬²»¶®Ê²Ã´¼Ü¹¹£¬ÕâÀï¼òµ¥ËµÏÂÎÒµÄ½á¹¹¡£·ÖÎªÊÓÍ¼¡¢¼àÌý¡¢·þÎñºÍÊý¾ÝÕâËÄ¸ö²¿·Ö£¬ÆäÖÐ£¬·þÎñÓÐ·þÎñ¹ÜÀíÆ÷¡£ÊÓÍ¼Çý¶¯£¬×îÖÕ»Øµ½ÊÓÍ¼£¬¼àÌýµ÷ÓÃ·þÎñ¹ÜÀíÆ÷£¬ÓÉ·þÎñ¹ÜÀíÆ÷Í³Ò»¹ÜÀíÆäËû·þÎñºÍÊý¾Ý¡£·þÎñ¹ÜÀíÆ÷£¬ºÍÁ½¸öÊÓÍ¼²Ù×÷ÀàÓ¦¸ÃÊÇÒªµ¥Àý»¯µÄ£¬µ«Ê±¼ä²»¹»¾Í²»¸ÄÁË¡£×Ô¼ºÐ´µÄ´úÂëÈ«ÔÚClientÀï¡£
-##½çÃæ½ØÍ¼
+# MQTT3å®¢æˆ·ç«¯ - Javaå›¾å½¢åŒ–ç•Œé¢
+è¿™æ˜¯ä¸€ä¸ªç”¨Javaå†™çš„æœ‰ä¼šè¯æ¨¡å¼çš„MQTTå®¢æˆ·ç«¯ï¼Œç”¨åˆ°äº†JavaSwingã€SQLiteã€Pahoã€Beautyeyeç­‰æŠ€æœ¯ã€‚ç•Œé¢ç®€æ´æ¸…æ–°ï¼Œæœ‰MQTTçš„åŸºæœ¬åŠŸèƒ½ï¼Œæœ‰ä¼šè¯æ¨¡å¼ï¼Œå¯ä»¥åœ¨åŒä¸€ä¸»é¢˜ä¸‹ä¼šè¯ï¼Œå¯ä»¥è®¾ç½®è´¦å·ã€å¯†ç ã€IDã€é—å˜±ç­‰ç™»å½•åˆå§‹ä¿¡æ¯ã€‚
+
+## èµ·å› 
+æ˜¯æƒ³å‚åŠ å…¨å›½å¤§å­¦ç”Ÿç”µå­è®¾è®¡å¤§èµ›ï¼Œé˜Ÿå‹æŠ±æ€¨ç”¨è“ç‰™è°ƒè¯•æ¯æ¬¡éƒ½è¦è¿žæŽ¥å¤ªéº»çƒ¦äº†ï¼Œæ‰€ä»¥æƒ³ç”¨WIFIï¼ŒäºŽæ˜¯æƒ³åˆ°äº†MQTTåè®®ï¼Œç”±äºŽMQTTå®¢æˆ·ç«¯è¿˜æ²¡æœ‰æˆ‘æ»¡æ„çš„ï¼ˆæŽ¥è§¦äº†ä¸¤ä¸ªï¼ŒMQTT.fxã€é€šä¿¡çŒ«ï¼ŒMQTT.fxæŒºå¥½çš„ï¼Œä½†æ˜¯ä¸æ€Žä¹ˆæ‡‚è‹±æ–‡ï¼Œè€Œä¸”å•ç‰‡æœºç”±äºŽå†…å­˜é™åˆ¶ï¼Œä¸€èˆ¬åªå®šä¹‰ä¸€ä¸ªä¸»é¢˜ï¼Œéƒ½æ²¡æœ‰ä¼šè¯æ¨¡å¼ï¼Œå‘ä¸»é¢˜å¤ªéº»çƒ¦äº†ï¼‰ï¼ŒäºŽæ˜¯å¼€å§‹åŠ¨æ‰‹ï¼ŒèŠ±å‡ å¤©åšäº†ä¸€ä¸ªè¿™ä¸ªã€‚
+
+## MQTTç›¸å…³
+MQTTæ˜¯ç”¨çš„pahoçš„åŒ…ï¼Œç›´æŽ¥åˆ°å®˜ç½‘ä¸‹çš„ï¼Œæ”¯æŒMQTT3.1.1ï¼ŒMQTTçš„å…³é”®éƒ¨åˆ†ï¼ˆMqttClientç±»ã€MqttClientCallbackç±»ç­‰ï¼‰æ·»åŠ äº†ä¸­æ–‡æ³¨é‡Šï¼Œå¯ä»¥ä¸­è‹±æ–‡å¯¹æ¯”ï¼Œæ²¡æœ‰ä¿®æ”¹å®˜æ–¹çš„ä»£ç ã€‚MQTTæ¯”è¾ƒå°å°±ä¸è£å‰ªäº†ã€‚è¿™ä¸ªæœ‰5Må¤šï¼ˆ87%ï¼‰éƒ½æ˜¯SQLiteçš„å¤§å°(>_<)ã€‚
+
+## SQLiteç›¸å…³
+SQLiteçš„JDBCæ˜¯3.27.2.1ç‰ˆæœ¬ï¼Œå®˜ç½‘æ‰“ä¸å¼€æ˜¯åœ¨[Bitbucket](https://bitbucket.org/xerial/sqlite-jdbc/downloads/)ä¸‹è½½çš„ã€‚ç”¨JavaBeansåšçš„ï¼ˆæ ¡ä¼åˆä½œåªå­¦äº†è¿™ä¸ªï¼Œå¬è¯´è¿˜æœ‰æ›´åŽ‰å®³çš„ï¼‰ï¼Œæ•°æ®åº“ç›¸å…³å…¨åœ¨top.luckysmile.mqtt.client.dataè¿™ä¸ªåŒ…é‡Œï¼Œé‡‡ç”¨é™æ€åŠ è½½æ–¹å¼åŠ è½½é©±åŠ¨ï¼Œåˆæ¬¡å­¦Javaæ³¨é‡Šæ¯”è¾ƒè¯¦ç»†ã€‚
+
+## Swingç›¸å…³
+Swingçš„æŽ§ä»¶å‘½åéƒ½è¿˜ç®—æ»¡è¶³è€å¸ˆè¯´çš„è§„èŒƒï¼Œåƒæ ‡ç­¾æ˜¯ç”¨jlbå¼€å¤´ï¼Œåå­—æ˜¯ç”¨è‹±æ–‡çš„ï¼Œæœ‰æ„ä¹‰çš„ã€‚ç”¨äº†JackJiang2011çš„[beautyeye](https://github.com/JackJiang2011/beautyeye)çš®è‚¤åŒ…ï¼ŒæŒºå¥½çœ‹çš„ã€‚Swingçš„ç»“æž„åº”è¯¥æ˜¯æ¯”è¾ƒæ¸…æ™°æ˜Žäº†çš„ï¼Œä¸»ç•Œé¢ä¸€ä¸ªJpnï¼Œä¼šè¯ï¼Œç™»å½•ï¼Œè®¢é˜…ï¼Œå‘å¸ƒå„ä¸€ä¸ªJpnï¼Œæ‰€æœ‰æŽ§ä»¶æ”¾åœ¨åŽ4ä¸ªJpnä¸Šï¼Œä¼šè¯é€‰é¡¹å¡å•ç‹¬ä¸€ä¸ªç±»ï¼Œä¸€ä¸ªä¸»jpnï¼ŒæŽ¥æ”¶å’Œå‘é€å„ä¸€ä¸ªjpnåœ¨ä¸»jpnä¸Šã€‚æ³¨é‡Šæ¯”è¾ƒè¯¦ç»†ã€‚
+
+## é¡¹ç›®æž¶æž„ç›¸å…³
+åˆå­¦Javaï¼Œåªæ˜¯è·Ÿç€è€å¸ˆçš„æ€è·¯æ¥ï¼Œä¸æ‡‚ä»€ä¹ˆæž¶æž„ï¼Œè¿™é‡Œç®€å•è¯´ä¸‹æˆ‘çš„ç»“æž„ã€‚åˆ†ä¸ºè§†å›¾ã€ç›‘å¬ã€æœåŠ¡å’Œæ•°æ®è¿™å››ä¸ªéƒ¨åˆ†ï¼Œå…¶ä¸­ï¼ŒæœåŠ¡æœ‰æœåŠ¡ç®¡ç†å™¨ã€‚è§†å›¾é©±åŠ¨ï¼Œæœ€ç»ˆå›žåˆ°è§†å›¾ï¼Œç›‘å¬è°ƒç”¨æœåŠ¡ç®¡ç†å™¨ï¼Œç”±æœåŠ¡ç®¡ç†å™¨ç»Ÿä¸€ç®¡ç†å…¶ä»–æœåŠ¡å’Œæ•°æ®ã€‚æœåŠ¡ç®¡ç†å™¨ï¼Œå’Œä¸¤ä¸ªè§†å›¾æ“ä½œç±»åº”è¯¥æ˜¯è¦å•ä¾‹åŒ–çš„ï¼Œä½†æ—¶é—´ä¸å¤Ÿå°±ä¸æ”¹äº†ã€‚è‡ªå·±å†™çš„ä»£ç å…¨åœ¨Clienté‡Œã€‚
+
+## ç•Œé¢æˆªå›¾
+![æœªè¿žæŽ¥](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg ''æœªè¿žæŽ¥'')
+![å·²è¿žæŽ¥](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg ''å·²è¿žæŽ¥'')
+![ä¼šè¯](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg ''ä¸»é¢˜ä¼šè¯'')
+![æ–­å¼€](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg ''æ–­å¼€è¿žæŽ¥'')
+![é€€å‡º](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg ''é€€å‡º'')
 
 
 # MQTT3JavaSwingClient
 This is a conversational MQTT client written in Java that USES JavaSwing, SQLite, Paho, Beautyeye, and other technologies.The interface is simple and fresh, with the basic functions of MQTT and the session mode, which allows you to have a conversation under the same theme, and you can set the initial login information such as account number, password, ID and will.
+
+## the cause
+Is to want to take part in the national undergraduate electronic design contest, teammate complain with bluetooth debugging to connect every time too much trouble, so want to use WIFI, so the thought of the MQTT protocol, due to the MQTT client haven't my satisfaction (contact with the two, MQTT. Cat fx, communication, MQTT. Fx quite good, but don't understand English, and single chip microcomputer because memory limit, generally define only one theme, conversational mode, theme is too much trouble), so start, take a few days to do this.
+
+## MQTT related
+MQTT is a package of paho, directly to the official website, and supports MQTT3.1.1. The key parts of MQTT (MqttClient class, MqttClientCallback class, etc.) are annotated in Chinese and can be compared between Chinese and English without modifying the official code.MQTT is small so it doesn't crop.This is more than 5M (87%), which is the size of SQLite (>_<).
+
+## SQLite related
+JDBC is 3.27.2.1 version of SQLite, website can't open is in [Bitbucket] (https://bitbucket.org/xerial/sqlite-jdbc/downloads/) to download.Made of JavaBeans (university-enterprise cooperation just learned this, I heard that there are more powerful), database related on top. All luckysmile.. The MQTT client. The data in the packet, driven by loading ways of the static load, initial learning Java annotations are detailed.
+
+## is related to the Swing
+Swing controls are named to meet the teacher's specifications, like the tag is JLB, the name is in English, meaningful.Using the JackJiang2011 [beautyeye] (https://github.com/JackJiang2011/beautyeye) skin bag, look good.Swing's structure should be fairly straightforward, with one Jpn for the main interface, one Jpn for session, login, subscribe, publish, and all the controls on the last four JPNS, and a single class for the session TAB, one for the main Jpn, one for receive and send and one for Jpn on the main Jpn.The comments are more detailed.
+Project architecture is relevant
+I just followed the teacher's train of thought when I started to learn Java. I don't understand any structure. Here is my structure.It is divided into four parts: view, monitor, service and data. Among them, service has service manager.View driven, and eventually back to the view, listening to the invoking service manager, which uniformly manages other services and data.The service manager, and the two view action classes should be singletons, but there isn't enough time to change them.All the code I wrote is in the Client.
+
+## Screen shots
+![no connet](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/1.jpg ''no connet'')
+![conneted](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/2.jpg ''conneted'')
+![Session model](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/3.jpg ''Topic Session model'')
+![disconnect](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/4.jpg ''disconnect'')
+![exit](https://github.com/Minuy/MQTT3JavaSwingClient/blob/master/screenshot/5.jpg ''exit'')

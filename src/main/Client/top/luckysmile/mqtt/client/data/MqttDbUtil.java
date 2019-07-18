@@ -42,7 +42,7 @@ public class MqttDbUtil {
 			conn = DriverManager.getConnection("jdbc:sqlite:" + url);
 		} catch (SQLException e) {
 			System.out.println("数据库连接失败！");
-			JOptionPane.showMessageDialog(null, "服务器连接失败");
+			JOptionPane.showMessageDialog(null, "数据库连接失败！请检查是否有权限。");
 			e.printStackTrace();
 		}
 		

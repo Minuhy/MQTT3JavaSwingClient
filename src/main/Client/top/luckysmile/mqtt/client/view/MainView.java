@@ -5,7 +5,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
@@ -137,10 +136,15 @@ public class MainView extends JFrame {
 		jlbPicture = new JLabel();
 
 		MainInit();
-		SetMainViewData();
-
 		//窗口使能
 		this.setVisible(true);
+		
+		//避免没有数据库权限卡死
+		new Thread() {
+			public void run() {
+				SetMainViewData();
+			};
+		}.start();
 	}
 
 	private void MainInit() {
@@ -174,7 +178,7 @@ public class MainView extends JFrame {
 			 */
 			private static final long serialVersionUID = 2019L;
 
-			private Image image = new ImageIcon("res/main_photo.png").getImage();
+			private Image image = new ImageIcon("/res/main_photo.png").getImage();
 			//这里系统要调用这个paintComponent方法来画这张图片，这里系统传入了一个Graphics对象（画笔），
 			//我们需要用这个对象来画背景图片
 			protected void paintComponent(Graphics g) {
@@ -306,11 +310,12 @@ public class MainView extends JFrame {
 		jtpChat.setBounds(0, 0, 400, 405);//消息列表
 		jtpChat.setFont(defFont);
 		jtpChat.setPreferredSize(new Dimension(320,405));
-		
-		
+
+
 		jlbPicture.setBounds(115, 115, 170, 170);
+
 		//实例化ImageIcon 对象
-		ImageIcon image = new ImageIcon("res/photo.jpg");
+		ImageIcon image = __ImageFactory__.getInstance().getSessionBackground();
 		//得到Image对象
 		Image img = image.getImage();
 		//创建缩放版本
@@ -366,8 +371,8 @@ public class MainView extends JFrame {
 
 		//把画布放到窗口里
 		this.add(jpnMain);
-		Image icon = Toolkit.getDefaultToolkit().getImage("res/mqttorg-glow.png");
-		this.setIconImage(icon);
+		ImageIcon icon = __ImageFactory__.getInstance().getApplicationIcon();
+		this.setIconImage(icon.getImage());
 
 		System.out.println("初始化窗口成功！");
 	}

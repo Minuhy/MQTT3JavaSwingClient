@@ -61,8 +61,16 @@ public class MqttClientCallback implements MqttCallback {
 		massage.setQos(String.valueOf(msg.getQos()));
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 		massage.setTime(df.format(new Date()));
-		massage.setOther("minuy");
-		new MqttDAO().SaveSession(massage);
+		massage.setOther("Session:" + title);
+		
+		//避免没有数据库权限卡死
+		final MqttMassageBeans finemassage = massage;
+		new Thread() {
+			public void run() {
+				//保存下设置
+				new MqttDAO().SaveSession(finemassage);
+			};
+		}.start();
 	}
 
 	@Override

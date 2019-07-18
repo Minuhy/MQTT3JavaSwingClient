@@ -71,7 +71,7 @@ public class MqttServerManage {
 
 			MqttClientConnet mqttClient = new MqttClientConnet(set,vo,this);
 			mqttClient.start();//连接
-			
+
 			//保存下设置
 			new MqttDAO().SaveSet(set);
 		}
@@ -103,7 +103,7 @@ public class MqttServerManage {
 				return;
 			}
 		}
-		
+
 		//看会话视图是否存在，存在则不用再创建
 		for (int i = 0; i < chatSession.size(); i++) {
 			if(set.getSubTopic().equals(chatSession.get(i).getJlbChatTopic().getText())) {
@@ -111,12 +111,19 @@ public class MqttServerManage {
 				mcv = chatSession.get(i);
 			}
 		}
-		
+
 		MqttSubServer sub = new MqttSubServer(set,vo,MC,this,isCreat,mcv);
 		sub.start();
-		
-		//保存下设置
-		new MqttDAO().SaveSet(set);
+
+		//避免没有数据库权限卡死
+		final MqttSetBeans setfine = set;
+		new Thread() {
+			public void run() {
+				//保存下设置
+				new MqttDAO().SaveSet(setfine);
+			};
+		}.start();
+
 	}
 
 	/**
@@ -162,7 +169,7 @@ public class MqttServerManage {
 	public void addSession(MQTTChatView newView) {
 		chatSession.add(newView);
 	}
-	
+
 	/**
 	 * 从视图列表里删除一个视图
 	 * @param newView
@@ -193,6 +200,7 @@ public class MqttServerManage {
 	 */
 	public void CleanSession(MQTTChatView mcv) {
 		cvo.CleanSession(mcv);
+		cvo.addBitNumber(mcv, -1);//清空计数器
 	}
 
 	/**

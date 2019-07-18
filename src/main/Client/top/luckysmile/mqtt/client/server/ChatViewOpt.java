@@ -14,7 +14,7 @@ public class ChatViewOpt {
 	private static ChatViewOpt cvo = null;
 	private ChatViewOpt() {
 	}
-	
+
 	public static ChatViewOpt getChatViewOpt() {
 		if(cvo!=null) {
 			return cvo;
@@ -23,14 +23,14 @@ public class ChatViewOpt {
 			return cvo;
 		}
 	}
-	
+
 	/**
 	 * 清理会话，清除接收到的数据
 	 */
 	public void CleanSession(MQTTChatView mcv) {
 		mcv.getJtaMassage().setText("");
 	}
-	
+
 	/**
 	 * 添加一条消息到会话窗口
 	 * @param msage
@@ -42,7 +42,7 @@ public class ChatViewOpt {
 		mcv.getJtaMassage().setText(history + time + " Qos:" + qos + "\n" + msage + "\n");
 		mcv.updateUI();
 	}
-	
+
 	/**
 	 * 获取发送的相关信息
 	 * @param mcv 会话视图
@@ -56,14 +56,18 @@ public class ChatViewOpt {
 		info[0] = mcv.getJlbChatTopic().getText();
 		return info;
 	}
-	
+
 	/**
 	 * 计数器
 	 * @param mcv
 	 * @param x
 	 */
 	public void addBitNumber(MQTTChatView mcv,int x) {
-		mcv.setStatisticsN(mcv.getStatisticsN()+x);
+		if(x == -1) {
+			mcv.setStatisticsN(0);
+		}else {
+			mcv.setStatisticsN(mcv.getStatisticsN()+x);
+		}
 		mcv.getJlbStatistics().setText("收到的字节数：" + mcv.getStatisticsN());
 	}
 }
